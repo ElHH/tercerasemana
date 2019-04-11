@@ -1,0 +1,35 @@
+{{>header}}
+
+<div class="container">
+<form action="/inscrito" method="post">
+    
+    <div class="row">
+        <div class="col">
+             <label>Documento de identidad</label>
+            <input type="text" class="form-control" placeholder="Documento de identidad" name="doc_identidad" required>
+
+
+        </div>
+
+        <div class="col">
+            <div class="form-group">
+                <label>Cursos</label>
+                <select class="form-control" name="curso">
+                    {{{seleccionarCursos}}}
+                </select><br></div>
+            </div>
+        </div>
+       
+    </div>
+     <div class="text-center">
+            <button class="BTN btn-primary"> inscribir </button>
+
+     </div>
+</form>
+
+    
+
+</div>
+
+
+{{>footer}}
